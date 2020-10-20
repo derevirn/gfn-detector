@@ -1,2 +1,2 @@
 # GFN Detector
-Detecting Greek Fake News (GFN) with spaCy
+Detecting greek fake news (GFN) with spaCy.
