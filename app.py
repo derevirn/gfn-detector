@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import matplotlib.pyplot as plt
 import spacy
 from spacy.lang.el.stop_words import STOP_WORDS
@@ -37,8 +36,16 @@ def generate_output(text):
 
 nlp = get_nlp_model('model')
 
+desc = "This web app detects fake news written in the Greek language.\
+        You can either enter the URL of a news article, or paste the text directly (works better).\
+        This app was developed with the Streamlit and spacy Python libraries.\
+        The Github repository of the app is available [here](https://github.com/derevirn/gfn-detector).\
+        Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/giannis-tolios-0020b067/)\
+        or via [e-mail](mailto:derevirn@gmail.com)."
+
 st.title("Greek Fake News Detector")
-st.subheader("Enter the URL address or the text of a greek news article.")
+st.markdown(desc)
+st.subheader("Enter the URL address/text of a news article written in Greek")
 select_input = st.radio("Select Input:", ["URL", "Text"])
 
 if select_input == "URL":
