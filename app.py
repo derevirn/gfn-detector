@@ -55,7 +55,7 @@ if select_input == "URL":
         generate_output(text)  
 
 else:
-    text = st.text_area("Text", height=250)
+    text = st.text_area("Text", height=300)
     if st.button("Run"):
         generate_output(text) 
 
