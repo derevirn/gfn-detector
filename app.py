@@ -41,7 +41,7 @@ desc = "This web app detects fake news written in the Greek language.\
         This app was developed with the Streamlit and spacy Python libraries.\
         The Github repository of the app is available [here](https://github.com/derevirn/gfn-detector).\
         Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/giannis-tolios-0020b067/)\
-        or via [e-mail](mailto:derevirn@gmail.com)."
+        or via [e-mail](mailto:info@giannis.io)."
 
 st.title("Greek Fake News Detector")
 st.markdown(desc)
